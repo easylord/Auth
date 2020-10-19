@@ -5,7 +5,6 @@ from .models import Income
 from rest_framework import permissions
 from  .permissions import IsOwner
 # Create your views here.
-
 class IncomeListAPIView(ListCreateAPIView):
     serializer_class= IncomeSerializer
     queryset = Income.objects.all()
